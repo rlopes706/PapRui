@@ -16,7 +16,7 @@ top(HOME);
                                 <a href="marcas.php"><img class="img-responsive" src="../images/blog-1.jpg" alt=""></a>
                                 <div class="blog-text">
                                     <div class="prod-title">
-                                        <h3 style="text-align: center"><strong>Marcas</strong> do Rally Javali 99999999999999999</h3>
+                                        <h3 style="text-align: center"><strong>Marcas</strong> do Rally Javali</h3>
                                         <h4 style="text-align: center"><i class="fas fa-th"></i></h4>
                                     </div>
                                 </div>
