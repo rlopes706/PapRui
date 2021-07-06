@@ -1,5 +1,5 @@
 <?php
-include_once ("../Includes/body.inc.php");
+include_once ("Includes/body.inc.php");
 top(ABOUT);
 $con = mysqli_connect(HOST, USER, PWD, DATABASE);
 $sql ="select * from calendario;";

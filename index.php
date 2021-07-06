@@ -1,5 +1,5 @@
 <?php
-include_once("../Includes/body.inc.php");
+include_once("Includes/body.inc.php");
 top(HOME);
 ?>
 

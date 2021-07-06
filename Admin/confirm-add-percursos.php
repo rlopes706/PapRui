@@ -14,5 +14,5 @@ $sql="insert into percursos (percursoNome,percursoKm,PercursoImgUrl)";
 $sql .= " values('".$nome."','".$km."','".$img."');";
 mysqli_query($con,$sql);// or die(mysqli_error($con));
 header("location:percursos.php");
-
+?>
 

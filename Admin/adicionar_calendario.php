@@ -32,7 +32,7 @@ $result = mysqli_query($con, $sql);
                         <form action="confirm-add-calendario.php" method="post" enctype="multipart/form-data">
                             <tr class="active" data-number="1">
                                 <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="nomeCalendario"style="cursor: text"></td>
-                                <td><a class="nolink"></a><input class="btn btn-outline" type="number" name="dataCalendario" style="cursor: pointer"></td>
+                                <td><a class="nolink"></a><input class="btn btn-outline" type="date" name="dataCalendario" style="cursor: pointer"></td>
                                 <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="vencedorCalendario" style="cursor: text"></td>
                                 <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="nacionalidadeCalendario" style="cursor: text"></td>
                                 <td><a class="nolink"></a><input class="btn btn-success" type="submit" value="Adicionar" style="height: 45px; width: 150px; border-color: #3f3f3f""></td>
