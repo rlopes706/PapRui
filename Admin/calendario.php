@@ -12,7 +12,7 @@ $result = mysqli_query($con, $sql);
                 <a class="sub-title-admin"><i class="icon-calendar3"></i><strong> Calendário</strong></a>
                 <div class="col text-center">
                     <div class="desc animate-box">
-                        <button class="btn btn-primary" style="height: 60px; width: 300px" onclick="location.href='adicionar_calendario.php'"><strong>ADICIONAR9999 </strong></a><i class="icon-plus3"></i></button>
+                        <button class="btn btn-primary" style="height: 60px; width: 300px" onclick="location.href='adicionar_calendario.php'"><strong>ADICIONAR </strong></a><i class="icon-plus3"></i></button>
                     </div>
                 </div>
             </div>

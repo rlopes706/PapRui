@@ -1,8 +1,8 @@
 <?php
 include_once("Includes/body.inc.php");
 top(HOME);
-
-
+$sql ="select * from marcas;";
+$result = mysqli_query($con, $sql);
 ?>
 
 
@@ -35,26 +35,27 @@ top(HOME);
                             <th><a class="btn btn-outline" style="cursor: default; width: 200px"><strong>Caixa de Velocidades </strong></a></th>
                             <th><a class="btn btn-outline" style="cursor: default; width: 130px"><strong>Imagem </strong></a></th>
                         </tr>
-
-                        <tr class="active" data-number="1">
-                            <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="nomeMarca" style="cursor: text; width: 150px"></td>
-                            <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="nomeMarca" style="cursor: text; width: 150px"></td>
-                            <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="nomeMarca" style="cursor: text; width: 150px"></td>
-                            <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="nomeMarca" style="cursor: text; width: 150px"></td>
-                            <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="nomeMarca" style="cursor: text; width: 150px"></td>
-                            <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="nomeMarca" style="cursor: text; width: 180px"></td>
-                            <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="nomeMarca" style="cursor: text; width: 150px"></td>
-                            <td><a class="nolink"></a><input class="btn btn-outline" type="file" name="nomeMarca" style="cursor: pointer; width: 170px"></td>
-                        </tr
+                        <form action="confirm-add-marcas.php" method="post" enctype="multipart/form-data">
+                            <tr class="active" data-number="1">
+                                <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="nomeMarcas" style="cursor: text; width: 150px"></td>
+                                <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="cavalagemMarcas" style="cursor: text; width: 150px"></td>
+                                <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="" style="cursor: text; width: 150px"></td>
+                                <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="nomeMarca" style="cursor: text; width: 150px"></td>
+                                <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="nomeMarca" style="cursor: text; width: 150px"></td>
+                                <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="nomeMarca" style="cursor: text; width: 180px"></td>
+                                <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="nomeMarca" style="cursor: text; width: 150px"></td>
+                                <td><a class="nolink"></a><input class="btn btn-outline" type="file" name="nomeMarca" style="cursor: pointer; width: 170px"></td>
+                            </tr
 
 
                         </tbody>
-                    </table><p></p>
-                    <div class="col text-center">
-                        <div class="desc animate-box">
-                            <button class="btn btn-success" style="height: 60px; width: 300px; border-color: #3f3f3f" onclick="location.href='marcas.php'"><strong> ADICIONAR </strong></a></button>
-                        </div>
-                    </div>
+                        </table><p></p>
+                            <div class="col text-center">
+                                <div class="desc animate-box">
+                                    <button class="btn btn-success" type="submit" style="height: 60px; width: 300px; border-color: #3f3f3f" onclick="location.href='marcas.php'"><strong> ADICIONAR </strong></a></button>
+                                </div>
+                            </div>
+                        </form>
                 </div>
             </div>
         </div>
