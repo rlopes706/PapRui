@@ -245,9 +245,7 @@ function botport()
     <?php
 }
 
-?>
 
-<?php
 function botper()
 {
     ?>
@@ -268,9 +266,74 @@ function botper()
     </div>
     <!-- END fh5co-wrapper -->
 
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document" style="background-color: #2F3032; border-radius: 40px" >
+                <div class="modal-header" >
+                    <div class="text-color-white">
+                        <h5 class="modal-title" id="exampleModalLabel" style="color: white"><strong>HYUNDAI</strong></h5>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="display-1"></div>
+                    <div class="row">
+                        <div class="col-2">
+                            <!-- INICIO - MENUS INFORMATIVO DE MARCAS -->
+                            <!-- Site para ir buscar info de carros ->  https://www.razaoautomovel.com/2017/05/maquinas-rally-portugal-wrc-2017  -->
+                            <table >
+                                <tr>
+                                    <td style="color: white"> <strong>Cavalagem</strong></td>
+                                    <td> 380cv</td>
+                                </tr>
+                                <tr>
+                                    <td style="color: white"> <strong>Motor</strong></td>
+                                    <td> 4 cilindros em linha, Turbo</td>
+                                </tr>
+                                <tr>
+                                    <td style="color: white"> <strong>Diâmetro / Curso</strong></td>
+                                    <td> 83.0 mm / 73.9 mm</td>
+                                </tr>
+                                <tr>
+                                    <td style="color: white"> <strong>Binário</strong></td>
+                                    <td> 450 Nm às 5500 rpm</td>
+                                </tr>
+                                <tr>
+                                    <td style="color: white"> <strong>Transmissão</strong></td>
+                                    <td> 4 rodas</td>
+                                </tr>
+                                <tr>
+                                    <td style="color: white"> <strong>Cx. de Velocidades</strong></td>
+                                    <td> Sequencial | Seis velocidades | Accionamento por patilhas</td>
+                                </tr>
+                            </table><p></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                    <!-- FIM - MENUS INFORMATIVO DE MARCAS -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        table, th, td {
+            border: 2px solid #848484;
+            border-collapse: collapse;
+            border-right: none;
+            border-left: none;
+        }
+
+        th, td {
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
     <!-- jQuery -->
-
-
     <script src="js/jquery.min.js"></script>
     <!-- jQuery Easing -->
     <script src="js/jquery.easing.1.3.js"></script>
@@ -287,283 +350,13 @@ function botper()
     <!-- Main JS (Do not remove) -->
     <script src="js/main.js"></script>
 
-
-    <script>
-
-        //script de img modal
-        // Get the modal
-        var modal = document.getElementById("myModal");
-
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById("myImg");
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("caption");
-        img.onclick = function () {
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-        }
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-
-    </script>
-
-    <style>
-        /*==============  TESTE 2 ==================*/
-
-        #myImg {
-            border-radius: 5px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        #myImg:hover {
-            opacity: 0.7;
-        }
-
-        /* The Modal (background) */
-        .modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1; /* Sit on top */
-            padding-top: 100px; /* Location of the box */
-            left: 0;
-            top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgb(0, 0, 0); /* Fallback color */
-            background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
-        }
-
-        /* Modal Content (image) */
-        .modal-content {
-            margin: auto;
-            display: block;
-            width: 80%;
-            max-width: 700px;
-        }
-
-        /* Caption of Modal Image */
-        #caption {
-            margin: auto;
-            display: block;
-            width: 80%;
-            max-width: 500px;
-            text-align: center;
-            color: #ccc;
-            padding: 10px 0;
-            height: 150px;
-        }
-
-        /* Add Animation */
-        .modal-content, #caption {
-            -webkit-animation-name: zoom;
-            -webkit-animation-duration: 0.6s;
-            animation-name: zoom;
-            animation-duration: 0.6s;
-        }
-
-        @-webkit-keyframes zoom {
-            from {
-                -webkit-transform: scale(0)
-            }
-            to {
-                -webkit-transform: scale(1)
-            }
-        }
-
-        @keyframes zoom {
-            from {
-                transform: scale(0)
-            }
-            to {
-                transform: scale(1)
-            }
-        }
-
-        /* The Close Button */
-        .close {
-            position: absolute;
-            top: 15px;
-            right: 35px;
-            color: #FFFFFF;
-            font-size: 90px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: #bbb;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        /* 100% Image Width on Smaller Screens */
-        @media only screen and (max-width: 700px) {
-            .modal-content {
-                width: 100%;
-            }
-        }
-
-        /*============== FIM TESTE 2 ==================*/
-
-
-        /* ================ INICIO DO TESTE =================*/
-        .home_gallery_area {
-            background: #f9f9ff;
-        }
-
-        .home_gallery_area .button_more {
-            text-align: center;
-            margin-top: 80px;
-        }
-
-        .isotope_fillter {
-            background: #ffffff;
-            border: 1px solid #eeeeee;
-            margin-bottom: 80px;
-        }
-
-        .isotope_fillter .gallery_filter {
-            text-align: center;
-        }
-
-        .isotope_fillter .gallery_filter li {
-            display: inline-block;
-            border-left: 1px solid #eeeeee;
-            margin-right: -4px;
-        }
-
-        .isotope_fillter .gallery_filter li a {
-            font-size: 12px;
-            font-family: "Poppins", sans-serif;
-            font-weight: 600;
-            text-transform: uppercase;
-            color: #222222;
-            line-height: 48px;
-            display: inline-block;
-            padding: 0px 30px;
-            margin: 0px;
-        }
-
-        .isotope_fillter .gallery_filter li:last-child {
-            border-right: 1px solid #eeeeee;
-            margin-right: 0px;
-        }
-
-        .isotope_fillter .gallery_filter li:hover a, .isotope_fillter .gallery_filter li.active a {
-            background: #fcdc00;
-            -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
-            box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
-        }
-
-        .gallery_f_inner {
-            margin-bottom: -30px;
-        }
-
-        .h_gallery_item {
-            position: relative;
-            overflow: hidden;
-            margin-bottom: 30px;
-        }
-
-        .h_gallery_item:before {
-            content: "";
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            left: 0px;
-            top: 0px;
-            background: rgba(0, 0, 0, 0.5);
-            opacity: 0;
-            -webkit-transition: all 300ms ease;
-            -o-transition: all 300ms ease;
-            transition: all 300ms ease;
-        }
-
-        .h_gallery_item img {
-            width: 100%;
-        }
-
-        .h_gallery_item .hover {
-            position: absolute;
-            bottom: 30px;
-            left: 0px;
-            width: 100%;
-            text-align: center;
-            -webkit-transition: all 300ms ease;
-            -o-transition: all 300ms ease;
-            transition: all 300ms ease;
-        }
-
-        .h_gallery_item .hover h4 {
-            color: #fff;
-            font-size: 18px;
-            font-weight: 600;
-            font-family: "Poppins", sans-serif;
-        }
-
-        .h_gallery_item .hover .light {
-            color: #fff;
-            font-size: 30px;
-            opacity: 0;
-            -webkit-transition: all 300ms ease;
-            -o-transition: all 300ms ease;
-            transition: all 300ms ease;
-        }
-
-        .h_gallery_item:hover:before {
-            opacity: 1;
-        }
-
-        .h_gallery_item:hover .hover {
-            bottom: 50%;
-            -webkit-transform: translateY(50%);
-            -ms-transform: translateY(50%);
-            transform: translateY(50%);
-        }
-
-        .h_gallery_item:hover .hover .light {
-            opacity: 1;
-        }
-
-        .single-gallery-image {
-            margin-top: 50px;
-            background-repeat: no-repeat !important;
-            background-position: center center !important;
-            background-size: cover !important;
-            height: 400px;
-            -webkit-transition: all 0.3s ease 0s;
-            -moz-transition: all 0.3s ease 0s;
-            -o-transition: all 0.3s ease 0s;
-            transition: all 0.3s ease 0s;
-        }
-
-        .single-gallery-image:hover {
-            opacity: .8;
-        }
-
-
-        /* ================ FIM DO TESTE =================*/
-    </style>
-
     </body>
     </html>
-    <?php
 
-}
-
-?>
 
 <?php
+}
+
 function botabout()
 {
     ?>
