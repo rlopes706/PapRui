@@ -89,7 +89,7 @@ top(HOME);
                             <h3 style="text-decoration-color: #2F3032"><strong>Percursos</strong></a></h3>
                             <p>Percursos do Rally Javali é um menu informativo e intuitivo, onde o utilizador pode
                                 observar informação sobre vários percursos do rally, adicionar e fazer alterações.</p>
-                            <p><a class="btn btn-primary" href="percursos.php"><i class="icon-plus"></i> Saber Mais</a>
+                            <p><a class="btn btn-primary" href="percursos_2.php"><i class="icon-plus"></i> Saber Mais</a>
                             </p>
                         </div>
                     </div>
@@ -129,7 +129,7 @@ top(HOME);
                 </div>
                 <div class="col-lg-4 col-md-4">
                     <div class="fh5co-blog animate-box">
-                        <a href="percursos.php"><img class="img-responsive" src="images/blog-2.jpg" alt=""></a>
+                        <a href="percursos_2.php"><img class="img-responsive" src="images/blog-2.jpg" alt=""></a>
                         <div class="blog-text">
                             <div class="prod-title" style="text-align: center">
                                 <h3><strong>Percursos</strong> do Rally Javali</h3>

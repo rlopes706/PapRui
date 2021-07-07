@@ -157,44 +157,31 @@ top(PERCURSO);
                     </div>
                 </div>
 
+
             <!--  FALTA POR A IMAGEM A EXPANDIR E DE LADO A DIZER OS KM'S DO PERCURSO-->
                 <div class="row row-bottom-padded-md">
                     <div class="col-md-12">
                         <section class="home_gallery_area p_120">
                             <div class="container box_1620">
                                 <div class="gallery_f_inner row imageGallery1">
-
                                     <div class="col-lg-3 col-md-4 col-sm-6 unv">
                                         <div class="h_gallery_item">
                                             <img src="images/percurso-1.png" alt="">
                                             <div class="hover">
-                                                <a href="#"><h4>Spreading Peace to world</h4></a>
-                                                <a class="light" href="images/percurso-1.png"><i class="fa fa-expand"></i></a>
+                                                <a><h4>Spreading Peace to world</h4></a>
+                                                <a class="light"  href="#" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-expand"></i></a>
                                             </div>
                                         </div>
-                                    </div>
-
-                                    <div class="col-lg-3 col-md-4 col-sm-6 unv">
-                                        <div class="h_gallery_item">
-                                            <img src="images/percurso-1.png" alt="">
-                                            <div class="hover">
-                                                <a href="#"><h4>Spreading Peace to world</h4></a>
-                                                <a class="light" href="images/percurso-1.png"><i class="fa fa-expand"></i></a>
-                                            </div>
 
 
-                                            <a href="#" class="color-4" data-toggle="modal" data-target="#exampleModal">
-                                                <div class="case-studies-summary">
-                                                    <h2>Hyundai</h2>
-                                                </div>
-                                            </a>
 
-                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </section>
                     </div>
+
+
                 </div>
 
 

@@ -10,7 +10,7 @@ if($img!=''){
     copy($_FILES['imagemPercursos']['tmp_name'], '../'.$img);
 }
 
-$sql="insert into percursos (percursoNome,percursoKm,PercursoImgUrl)";
+$sql="insert into percursos (percursoNome,percursoKm,percursoImgUrl)";
 $sql .= " values('".$nome."','".$km."','".$img."');";
 mysqli_query($con,$sql);// or die(mysqli_error($con));
 header("location:percursos.php");

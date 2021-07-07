@@ -72,7 +72,7 @@ function top($menu = HOME){
                                     <a href="portfolio.php"><i class="fas fa-th"></i> Marcas</a>
                                 </li>
                                 <li <?php if ($menu == PERCURSO) echo "class=\"active\""; ?>>
-                                    <a href="percursos.php"><i class="icon-flow-branch"></i> Percursos</a>
+                                    <a href="percursos_2.php"><i class="icon-flow-branch"></i> Percursos</a>
                                 </li>
                                 <li <?php if ($menu == ABOUT) echo "class=\"active\""; ?>>
                                     <a href="about.php"><i class="icon-calendar"></i> Calendário</a>
