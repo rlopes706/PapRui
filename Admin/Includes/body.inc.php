@@ -226,6 +226,7 @@ function botper()
 
     <style>
         table, th, td {
+
             margin-left: auto;
             margin-right: auto;
             border: 2px solid #848484;

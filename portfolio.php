@@ -2,7 +2,7 @@
 include_once("Includes/body.inc.php");
 top(PORTO);
 $con = mysqli_connect(HOST, USER, PWD, DATABASE);
-$sql ="select * from calendario;";
+$sql ="select * from marcas;";
 $result = mysqli_query($con, $sql);
 ?>
 
@@ -69,23 +69,6 @@ $result = mysqli_query($con, $sql);
             </div>
         </div>
 
-        <div class="row row-bottom-padded-md">
-            <div class="col-md-12">
-                <ul id="fh5co-portfolio-list">
-
-                    <!-- Hyundai -->
-                    <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/work-4.jpg); ">
-                        <a href="#" class="color-4" data-toggle="modal" data-target="#exampleModal">
-                            <div class="case-studies-summary">
-                                <h2>Hyundai</h2>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-
         <?php
         while ($dados = mysqli_fetch_array($result)) {
             ?>
@@ -93,12 +76,10 @@ $result = mysqli_query($con, $sql);
         <div class="row row-bottom-padded-md">
             <div class="col-md-12">
                 <ul id="fh5co-portfolio-list">
-
-
                     <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/work-4.jpg); ">
                         <a href="#" class="color-4" data-toggle="modal" data-target="#exampleModal">
                             <div class="case-studies-summary">
-                                <h2>Hyundai</h2>
+                                <h2><?php echo $dados['marcasNome'] ?></h2>
                             </div>
                         </a>
                     </li>

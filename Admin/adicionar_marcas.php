@@ -31,72 +31,51 @@ $result = mysqli_query($con, $sql);
                             <th><a class="btn btn-outline" style="cursor: default; width: 130px"><strong>Motor </strong></a></th>
                             <th><a class="btn btn-outline" style="cursor: default; width: 200px"><strong>Diâmetro / Curso </strong></a></th>
                             <th><a class="btn btn-outline" style="cursor: default; width: 170px"><strong>Binário </strong></a></th>
-
                         </tr>
                         <form action="confirm-add-marcas.php" method="post" enctype="multipart/form-data">
                             <tr class="active" data-number="1">
                                 <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="nomeMarcas" style="cursor: text; width: 170px; height: 50px"></td>
                                 <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="cavalagemMarcas" style="cursor: text; width: 170px; height: 50px"></td>
-                                <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="" style="cursor: text; width: 170px; height: 50px"></td>
-                                <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="nomeMarca" style="cursor: text; width: 170px; height: 50px"></td>
-                                <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="nomeMarca" style="cursor: text; width: 170px; height: 50px"></td>
+                                <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="motorMarcas" style="cursor: text; width: 170px; height: 50px"></td>
+                                <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="diamMarcas" style="cursor: text; width: 170px; height: 50px"></td>
+                                <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="binarioMarcas" style="cursor: text; width: 170px; height: 50px"></td>
+                                <td><a class="nolink"></a><input class="btn btn-success" type="submit" value="Adicionar" style="height: 50px; width: 150px; border-color: #3f3f3f""></td>
                             </tr>
                         </form>
-                            <p></p>
-                            <tr>
-                                <th><a class="btn btn-outline" style="cursor: default; width: 200px"><strong>Transmissão </strong></a></th>
-                                <th><a class="btn btn-outline" style="cursor: default; width: 206px"><strong>Caixa de Velocidades </strong></a></th>
-                                <th><a class="btn btn-outline" style="cursor: default; width: 300px"><strong>Imagem </strong></a></th>
-                                <th><a class="nolink" style="cursor: default; width: 130px"><strong> </strong></a></th>
-                            </tr>
-                            <form action="confirm-add-marcas.php" method="post" enctype="multipart/form-data">
-                                <tr class="active" data-number="1">
-                                    <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="nomeMarca" style="cursor: text; width: 200px; height: 50px"></td>
-                                    <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="nomeMarca" style="cursor: text; width: 206px; height: 50px"></td>
-                                    <td><a class="nolink"></a><input class="btn btn-outline" type="file" name="nomeMarca" style="cursor: pointer; width: auto"></td>
-                                    <td><a class="nolink"></a><input class="btn btn-success" type="submit" value="Adicionar" style="height: 50px; width: 150px; border-color: #3f3f3f""></td>
-                                </tr>
-                        </form>
-
                         </tbody>
                         </table><p></p>
-
-
                 </div>
             </div>
         </div>
     </div>
 <!--
     <div class="active">
-    <div class="container">
-        <div class="row">
-            <div class="desc animate-box">
-                <table id="t01" style="margin-left: -30px">
-                    <tbody>
-                    <tr>
-                        <th><a class="btn btn-outline" style="cursor: default; width: 200px"><strong>Transmissão </strong></a></th>
-                        <th><a class="btn btn-outline" style="cursor: default; width: 206px"><strong>Caixa de Velocidades </strong></a></th>
-                        <th><a class="btn btn-outline" style="cursor: default; width: 300px"><strong>Imagem </strong></a></th>
-                        <th><a class="nolink" style="cursor: default; width: 130px"><strong> </strong></a></th>
-                    </tr>
-                    <form action="confirm-add-marcas.php" method="post" enctype="multipart/form-data">
-                        <tr class="active" data-number="1">
-                            <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="nomeMarca" style="cursor: text; width: 200px; height: 50px"></td>
-                            <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="nomeMarca" style="cursor: text; width: 206px; height: 50px"></td>
-                            <td><a class="nolink"></a><input class="btn btn-outline" type="file" name="nomeMarca" style="cursor: pointer; width: auto"></td>
-                            <td><a class="nolink"></a><input class="btn btn-success" type="submit" value="Adicionar" style="height: 50px; width: 150px; border-color: #3f3f3f""></td>
+        <div class="container">
+            <div class="row">
+                <div class="desc animate-box">
+                    <table id="t01" style="margin-left: -30px">
+                        <tbody>
+                        <tr>
+                            <th><a class="btn btn-outline" style="cursor: default; width: 200px"><strong>Transmissão </strong></a></th>
+                            <th><a class="btn btn-outline" style="cursor: default; width: 206px"><strong>Caixa de Velocidades </strong></a></th>
+                            <th><a class="btn btn-outline" style="cursor: default; width: 300px"><strong>Imagem </strong></a></th>
+                            <th><a class="nolink" style="cursor: default; width: 130px"><strong> </strong></a></th>
                         </tr>
-                    </form>
-
-                    </tbody>
-                </table><p></p>
-
-
-            </div>
+                        <form action="confirm-add-marcas.php" method="post" enctype="multipart/form-data">
+                            <tr class="active" data-number="1">
+                                <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="transMarcas" style="cursor: text; width: 200px; height: 50px"></td>
+                                <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="caixaMarcas" style="cursor: text; width: 206px; height: 50px"></td>
+                                <td><a class="nolink"></a><input class="btn btn-outline" type="file" name="imagemMarcas" style="cursor: pointer; width: auto"></td>
+                                <td><a class="nolink"></a><input class="btn btn-success" type="submit" value="Adicionar" style="height: 50px; width: 150px; border-color: #3f3f3f""></td>
+                            </tr>
+                        </form>
+                        </tbody>
+                    </table><p></p>
+                </div>
+         </div>
         </div>
     </div>
-</div>-->
-
+-->
 </div>
 
 <style>
@@ -105,6 +84,7 @@ $result = mysqli_query($con, $sql);
         height: 80px;
         border: 3px solid #3f3f3f;
     }
+
 </style>
 
 
