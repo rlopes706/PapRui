@@ -1,7 +1,7 @@
 <?php
 include_once("config.inc.php");
 $con = mysqli_connect(HOST, USER, PWD, DATABASE);
-$con->set_charset("utf8");
+$con->set_charset("utf-8");
 function top($menu = HOME){
 ?>
     <!DOCTYPE html>
@@ -16,7 +16,7 @@ function top($menu = HOME){
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Rally Javali</title>
+    <title>Rally Javali - Admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Free HTML5 Template by FREEHTML5.CO"/>
     <meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive"/>
@@ -47,6 +47,7 @@ function top($menu = HOME){
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
           integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
+    <script src="js/script.js"></script>
 
     <!-- Modernizr JS -->
     <script src="js/modernizr-2.6.2.min.js"></script>
@@ -55,6 +56,13 @@ function top($menu = HOME){
     <script src="js/respond.min.js"></script>
     <![endif]-->
 
+    <style>
+       /* .container{
+            min-height: 600px;
+        }
+
+        */
+    </style>
 </head>
 <body>
 <div id="fh5co-wrapper">

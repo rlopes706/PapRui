@@ -4,6 +4,7 @@ top(HOME);
 $id = intval($_GET['id']);
 $sql ="select * from percursos where percursoId=".$id;
 $result = mysqli_query($con, $sql);
+$dados = mysqli_fetch_array($result);
 ?>
 
 <div id="fh5co-content-section" class="fh5co-section-gray"><p></p>
@@ -25,13 +26,11 @@ $result = mysqli_query($con, $sql);
                         <tbody>
                         <tr>
                             <th><a class="btn btn-outline" style="cursor: default; width: 230px"><strong>Nome </strong></a></th>
-                            <th><a class="btn btn-outline" style="cursor: default; width: 230px"><strong>Dist‚ncia / Km's </strong></a></th>
-                            <th><a class="btn btn-outline" style="cursor: default; width: 230px"><strong>Imagem SatÈlite </strong></a></th>
-                            <th><a class="nolink"><strong> <!-- EspaÁo --> </strong></a></th>
+                            <th><a class="btn btn-outline" style="cursor: default; width: 230px"><strong>Dist√¢ncia / Km's </strong></a></th>
+                            <th><a class="btn btn-outline" style="cursor: default; width: 230px"><strong>Imagem Sat√©lite </strong></a></th>
+                            <th><a class="nolink"><strong> <img src="../<?php echo $dados['percursoImgUrl'];?>" width="120"></strong></a></th>
                         </tr>
-                        <?php
-                        while ($dados = mysqli_fetch_array($result)) {
-                        ?>
+
                         <form action="confirm-edit-percursos.php" method="post" enctype="multipart/form-data">
                             <tr class="active" data-number="1">
                                 <td><input name="idPercursos" hidden value="<?php echo $dados['percursoId']?>"/>
@@ -41,9 +40,7 @@ $result = mysqli_query($con, $sql);
                                 <td><a class="nolink"></a><input class="btn btn-success" type="submit" value="Editar" style="height: 45px; width: 150px; border-color: #3f3f3f""></td>
                             </tr
                         </form>
-                        <?php
-                        }
-                        ?>
+
                         </tbody>
                     </table>
                 </div>
