@@ -4,7 +4,7 @@ top(HOME);
 $con = mysqli_connect(HOST, USER, PWD, DATABASE);
 $sql ="select * from marcas;";
 $result = mysqli_query($con, $sql);
-
+//---
 ?>
 
 

@@ -43,7 +43,7 @@ $result = mysqli_query($con, $sql);
                                 <td><a class="nolink"><?php echo $dados['percursoKm'] ?></a></td>
                                 <td><img id="img1" src="../<?php echo $dados['percursoImgUrl'] ?>"></td>
                                 <td><a href="editar_percursos.php?id=<?php echo $dados['percursoId'] ?>"> <i class="btn btn-primary fas fa-edit text-primary"></i></a><p></p>
-                                    <a href="#" > <i class="btn btn-danger fas fa-trash  text-danger" ></i></a></td>
+                                    <a href="eliminar_percursos.php" > <i class="btn btn-danger fas fa-trash  text-danger" ></i></a></td>
                             </tr>
 
                                 <?php
@@ -66,7 +66,7 @@ $result = mysqli_query($con, $sql);
                 border: 3px solid #3f3f3f;
             }
         </style>
-
+<!-- --- Eliminar :) ---
 <script>
     function confirmaElimina(perId) {
         let r=confirm("Tem a certeza? ("+result+")");
@@ -76,7 +76,7 @@ $result = mysqli_query($con, $sql);
     }
 
 </script>
-
+-->
 
 <?php
 botper();

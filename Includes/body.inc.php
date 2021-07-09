@@ -136,6 +136,9 @@ function top($menu = HOME){
 <?php
 function botport()
 {
+    $con = mysqli_connect(HOST, USER, PWD, DATABASE);
+    $sql ="select * from marcas;";
+    $result = mysqli_query($con, $sql);
     ?>
 
     <footer>
@@ -164,36 +167,41 @@ function botport()
                         <h5 class="modal-title" id="exampleModalLabel" style="color: white"><strong>HYUNDAI</strong></h5>
                     </div>
                 </div>
+
+            <?php
+            while ($dados = mysqli_fetch_array($result)) {
+            ?>
                 <div class="modal-body">
                     <div class="display-1"></div>
+
                     <div class="row">
                         <div class="col-2">
                             <!-- INICIO - MENUS INFORMATIVO DE MARCAS -->
                             <!-- Site para ir buscar info de carros ->  https://www.razaoautomovel.com/2017/05/maquinas-rally-portugal-wrc-2017  -->
-                            <table >
+                            <table style="width: 600px">
                                 <tr>
                                     <td style="color: white"> <strong>Cavalagem</strong></td>
-                                    <td> 380cv</td>
+                                    <td style="color: whitesmoke; text-align: left"><?php echo $dados['marcasNome'] ?> cv</td>
                                 </tr>
                                 <tr>
                                     <td style="color: white"> <strong>Motor</strong></td>
-                                    <td> 4 cilindros em linha, Turbo</td>
+                                    <td style="color: whitesmoke; text-align: left"><?php echo $dados['marcasMotor'] ?></td>
                                 </tr>
                                 <tr>
                                     <td style="color: white"> <strong>Diâmetro / Curso</strong></td>
-                                    <td> 83.0 mm / 73.9 mm</td>
+                                    <td style="color: whitesmoke; text-align: left"><?php echo $dados['marcasDiam'] ?></td>
                                 </tr>
                                 <tr>
                                     <td style="color: white"> <strong>Binário</strong></td>
-                                    <td> 450 Nm às 5500 rpm</td>
+                                    <td style="color: whitesmoke; text-align: left"><?php echo $dados['marcasBinario'] ?></td>
                                 </tr>
                                 <tr>
                                     <td style="color: white"> <strong>Transmissão</strong></td>
-                                    <td> 4 rodas</td>
+                                    <td style="color: whitesmoke"><?php echo $dados['marcasBinario'] ?></td>
                                 </tr>
                                 <tr>
                                     <td style="color: white"> <strong>Cx. de Velocidades</strong></td>
-                                    <td> Sequencial | Seis velocidades | Accionamento por patilhas</td>
+                                    <td style="color: whitesmoke"><?php echo $dados['marcasBinario'] ?></td>
                                 </tr>
                             </table><p></p>
                         </div>
@@ -204,6 +212,10 @@ function botport()
 
                     <!-- FIM - MENUS INFORMATIVO DE MARCAS -->
                 </div>
+                <?php
+            }
+
+            ?>
             </div>
         </div>
     </div>
