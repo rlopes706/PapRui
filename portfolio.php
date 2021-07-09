@@ -12,7 +12,7 @@ $result = mysqli_query($con, $sql);
     <div class="fh5co-cover fh5co-cover_2 text-center" data-stellar-background-ratio="0.5"
          style="background-image: url(images/cover_bg_2.jpg);">
         <div class="desc animate-box">
-            <h2>Marcas do Javali</h2>
+            <h2>Carros do Javali</h2>
         </div>
     </div>
 </div>
@@ -63,8 +63,8 @@ $result = mysqli_query($con, $sql);
 
         <div class="row">
             <div class="col-md-6 col-md-offset-3 text-center heading-section animate-box">
-                <h3><strong>Marcas</strong> do Rally Javali</h3>
-                <p>Marcas do Rally Javali é um menu onde voce pode visualizar algumas informações sobre alguns carros e
+                <h3><strong>Carros</strong> do Rally Javali</h3>
+                <p>Carros do Rally Javali é um menu onde voce pode visualizar algumas informações sobre alguns carros e
                     adicionar também novos carros e respetivas informações!</p>
             </div>
         </div>
@@ -76,7 +76,7 @@ $result = mysqli_query($con, $sql);
         <div class="row row-bottom-padded-md">
             <div class="col-md-12">
                 <ul id="fh5co-portfolio-list">
-                    <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/work-4.jpg); ">
+                    <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(<?php echo $dados['marcasImgUrl'] ?>);">
                         <a href="#" class="color-4" data-toggle="modal" data-target="#exampleModal">
                             <div class="case-studies-summary">
                                 <h2><?php echo $dados['marcasNome'] ?></h2>

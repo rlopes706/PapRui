@@ -5,7 +5,7 @@ top(HOME);
 
 
 <div id="fh5co-content-section" class="fh5co-section-gray">
-    <a class="sub-title-admin"><i class="fas fa-th"></i><strong> Marcas - </strong>Editar</a>
+    <a class="sub-title-admin"><i class="fa fa-car"></i><strong> Carros - </strong>Editar</a>
     <div class="container">
         <div class="row">
             <div class="col text-center">

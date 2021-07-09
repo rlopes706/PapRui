@@ -69,7 +69,7 @@ function top($menu = HOME){
                                     <a href="index.php"><i class="icon-home3"></i> Início</a>
                                 </li>
                                 <li <?php if ($menu == PORTO) echo "class=\"active\""; ?>>
-                                    <a href="portfolio.php"><i class="fas fa-th"></i> Marcas</a>
+                                    <a href="portfolio.php"><i class="fa fa-car"></i> Carros</a>
                                 </li>
                                 <li <?php if ($menu == PERCURSO) echo "class=\"active\""; ?>>
                                     <a href="percursos_2.php"><i class="icon-flow-branch"></i> Percursos</a>
@@ -159,18 +159,18 @@ function botport()
 
 
     <!-- Modal -->
-
+    <?php
+while ($dados = mysqli_fetch_array($result)) {
+    ?>
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document" style="background-color: #2F3032; border-radius: 40px" >
                 <div class="modal-header" >
                     <div class="text-color-white">
-                        <h5 class="modal-title" id="exampleModalLabel" style="color: white"><strong>HYUNDAI</strong></h5>
+                        <h5 class="modal-title" id="exampleModalLabel" style="color: white; font-size: 20px"><strong><?php echo $dados['marcasNome'] ?></strong></h5>
                     </div>
                 </div>
 
-            <?php
-            while ($dados = mysqli_fetch_array($result)) {
-            ?>
+
                 <div class="modal-body">
                     <div class="display-1"></div>
 
@@ -181,7 +181,7 @@ function botport()
                             <table style="width: 600px">
                                 <tr>
                                     <td style="color: white"> <strong>Cavalagem</strong></td>
-                                    <td style="color: whitesmoke; text-align: left"><?php echo $dados['marcasNome'] ?> cv</td>
+                                    <td style="color: whitesmoke; text-align: left"><?php echo $dados['marcasCavalagem'] ?> cv</td>
                                 </tr>
                                 <tr>
                                     <td style="color: white"> <strong>Motor</strong></td>
@@ -196,12 +196,7 @@ function botport()
                                     <td style="color: whitesmoke; text-align: left"><?php echo $dados['marcasBinario'] ?></td>
                                 </tr>
                                 <tr>
-                                    <td style="color: white"> <strong>Transmissão</strong></td>
-                                    <td style="color: whitesmoke"><?php echo $dados['marcasBinario'] ?></td>
-                                </tr>
-                                <tr>
-                                    <td style="color: white"> <strong>Cx. de Velocidades</strong></td>
-                                    <td style="color: whitesmoke"><?php echo $dados['marcasBinario'] ?></td>
+                                    <td><img id="img1" src="<?php echo $dados['marcasImgUrl'] ?>" style="width: 300px; height: 300px; border: 4px solid #848484; margin-left: 130px"></td>
                                 </tr>
                             </table><p></p>
                         </div>
@@ -232,6 +227,7 @@ function botport()
             padding: 20px;
             text-align: center;
         }
+
     </style>
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
@@ -421,7 +417,8 @@ function botabout()
         }
 
         table#t01 th {
-            background-color: black;
+            background-color: lightgray;
+
             color: white;
         }
     </style>

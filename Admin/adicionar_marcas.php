@@ -9,7 +9,7 @@ $result = mysqli_query($con, $sql);
 <div id="fh5co-content-section" class="fh5co-section-gray"><p></p>
     <div class="container">
         <div class="row">
-            <a class="sub-title-admin"><i class="fas fa-th"></i><strong> Marcas - </strong>ADICIONAR</a>
+            <a class="sub-title-admin"><i class="fa fa-car"></i><strong> Carros - </strong>ADICIONAR</a>
             <div class="col text-center">
                 <div class="desc animate-box">
                     <button class="btn btn-primary" style="height: 60px; width: 300px" onclick="location.href='marcas.php'"><strong> VOLTAR </strong></a><i class="fas fa-arrow-left"></i></i></button>
@@ -23,7 +23,7 @@ $result = mysqli_query($con, $sql);
         <div class="container">
             <div class="row">
                 <div class="desc animate-box">
-                    <table id="t01" style="margin-left: -30px">
+                    <table id="t01" style="margin-left: -240px">
                         <tbody>
                         <tr>
                             <th><a class="btn btn-outline" style="cursor: default; width: 130px"><strong>Marca </strong></a></th>
@@ -31,6 +31,8 @@ $result = mysqli_query($con, $sql);
                             <th><a class="btn btn-outline" style="cursor: default; width: 130px"><strong>Motor </strong></a></th>
                             <th><a class="btn btn-outline" style="cursor: default; width: 200px"><strong>Diâmetro / Curso </strong></a></th>
                             <th><a class="btn btn-outline" style="cursor: default; width: 170px"><strong>Binário </strong></a></th>
+                            <th><a class="btn btn-outline" style="cursor: default; width: 170px"><strong>Imagem </strong></a></th>
+                            <th><a class="nolink" style="cursor: default; width: 170px"><strong><!-- ESPAÇO --> </strong></a></th>
                         </tr>
                         <form action="confirm-add-marcas.php" method="post" enctype="multipart/form-data">
                             <tr class="active" data-number="1">
@@ -39,6 +41,7 @@ $result = mysqli_query($con, $sql);
                                 <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="motorMarcas" style="cursor: text; width: 170px; height: 50px"></td>
                                 <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="diamMarcas" style="cursor: text; width: 170px; height: 50px"></td>
                                 <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="binarioMarcas" style="cursor: text; width: 170px; height: 50px"></td>
+                                <td><a class="nolink"></a><input class="btn btn-outline" type="file" name="imagemMarcas" style="cursor: text; width: 170px; height: 50px"></td>
                                 <td><a class="nolink"></a><input class="btn btn-success" type="submit" value="Adicionar" style="height: 50px; width: 150px; border-color: #3f3f3f""></td>
                             </tr>
                         </form>

@@ -159,6 +159,13 @@ $result = mysqli_query($con, $sql);
                         <div class="row">
                             <div class="desc animate-box">
                                 <table id="t01" style="margin-left: 80px">
+                                    <!--<tr class="active">
+                                        <th><a class="active"><strong>Nome Rally</strong></a></th>
+                                        <th><a class="active"><strong>Dia de Começo</strong></a></th>
+                                        <th><a class="active"><strong>Vencedor</strong></a></th>
+                                        <th><a class="active"><strong>Nacionalidade</strong></a></th>
+                                        <th><a class="active"><strong>ESPAÇO</strong></a></th>
+                                    </tr> -->
                                     <tbody>
                                     <tr class="active" data-number="1">
                                         <td><a class="nolink"> Rally de Portugal</a></td>
@@ -219,6 +226,9 @@ $result = mysqli_query($con, $sql);
                     </div>
                 </div>
             </div>
+
+
+
           <?php
 botabout();
 ?>

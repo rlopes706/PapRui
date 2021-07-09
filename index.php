@@ -70,8 +70,8 @@ top(HOME);
                     </div>
                     <div class="col-md-6 animate-box">
                         <div class="desc">
-                            <h3><strong>Marcas</strong></h3>
-                            <p>Marcas do Rally Javali é um menu informativo e intuitivo, onde o utilizador pode obversar
+                            <h3><strong>Carros</strong></h3>
+                            <p>Carros do Rally Javali é um menu informativo e intuitivo, onde o utilizador pode obversar
                                 informações sobre varios aspetos sobre carros predefenidos como também adicionar.</p>
                             <p><a class="btn btn-primary" href="portfolio.php"><i class="icon-plus"></i> Saber Mais</a>
                             </p>
@@ -121,8 +121,8 @@ top(HOME);
                         <a href="portfolio.php"><img class="img-responsive" src="images/blog-1.jpg" alt=""></a>
                         <div class="blog-text">
                             <div class="prod-title">
-                                <h3 style="text-align: center"><strong>Marcas</strong> do Rally Javali</h3>
-                                <h4 style="text-align: center"><i class="fas fa-th"></i></h4>
+                                <h3 style="text-align: center"><strong>Carros</strong> do Rally Javali</h3>
+                                <h4 style="text-align: center"><i class="fa fa-car"></i></h4>
                             </div>
                         </div>
                     </div>

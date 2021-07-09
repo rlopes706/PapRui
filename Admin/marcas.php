@@ -11,7 +11,7 @@ $result = mysqli_query($con, $sql);
         <div id="fh5co-content-section" class="fh5co-section-gray"><p></p>
             <div class="container">
                 <div class="row">
-                    <a class="sub-title-admin"><i class="fas fa-th"></i><strong> Marcas</strong></a>
+                    <a class="sub-title-admin"><i class="fa fa-car"></i><strong> Carros</strong></a>
                     <div class="col text-center">
                         <div class="desc animate-box">
                             <button class="btn btn-primary" style="height: 60px; width: 400px" onclick="location.href='adicionar_marcas.php'"><strong>ADICIONAR </strong></a><i class="icon-plus3"></i></button>
@@ -34,6 +34,7 @@ $result = mysqli_query($con, $sql);
                                         <th><a class="nolink"><strong>Motor </strong></a></th>
                                         <th><a class="nolink"><strong>Diâmetro / Curso </strong></a></th>
                                         <th><a class="nolink"><strong>Binário </strong></a></th>
+                                        <th><a class="nolink"><strong>Imagem </strong></a></th>
                                         <th><a class="nolink"><strong> Opções </strong></a></th>
                                     </tr>
 
@@ -46,8 +47,9 @@ $result = mysqli_query($con, $sql);
                                         <td><a class="nolink"><?php echo $dados['marcasNome'] ?></a></td>
                                         <td><a class="nolink"><?php echo $dados['marcasCavalagem'] ?> cv</a></td>
                                         <td><a class="nolink"><?php echo $dados['marcasMotor'] ?></a></td>
-                                        <td><a class="nolink"><?php echo $dados['marcasDiam'] ?></a></td>
-                                        <td><a class="nolink"><?php echo $dados['marcasBinario'] ?></a></td>
+                                        <td><a class="nolink"><?php echo $dados['marcasDiam'] ?> mm</a></td>
+                                        <td><a class="nolink"><?php echo $dados['marcasBinario'] ?> rpm</a></td>
+                                        <td><img id="img1" src="../<?php echo $dados['marcasImgUrl'] ?>"></td>
                                         <td><a href="editar_marcas.php"><i class="btn btn-primary fas fa-edit text-primary"></i></a><p></p>
                                             <a href="#" >
                                                 <i class="btn btn-danger fas fa-trash  text-danger" ></i></a></td>
