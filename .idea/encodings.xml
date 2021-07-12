@@ -4,7 +4,9 @@
     <file url="file://$PROJECT_DIR$/Admin/Includes/body.inc.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Admin/confirm-add-calendario.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Admin/confirm-edit-percursos.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Admin/editar_calendario.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Admin/editar_percursos.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Admin/js/script.js" charset="UTF-8" />
     <file url="PROJECT" charset="ISO-8859-1" />
   </component>
 </project>

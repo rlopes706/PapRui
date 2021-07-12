@@ -28,7 +28,7 @@ $dados = mysqli_fetch_array($result);
                             <th><a class="btn btn-outline" style="cursor: default; width: 230px"><strong>Nome </strong></a></th>
                             <th><a class="btn btn-outline" style="cursor: default; width: 230px"><strong>Distância / Km's </strong></a></th>
                             <th><a class="btn btn-outline" style="cursor: default; width: 230px"><strong>Imagem Satélite </strong></a></th>
-                            <th><a class="nolink"><strong> <img src="../<?php echo $dados['percursoImgUrl'];?>" width="120"></strong></a></th>
+                            <th><a class="nolink"><strong> <img src="../<?php echo $dados['percursoImgUrl'];?>" width="80"; height="80"></strong></a></th>
                         </tr>
 
                         <form action="confirm-edit-percursos.php" method="post" enctype="multipart/form-data">

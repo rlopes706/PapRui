@@ -43,7 +43,7 @@ $result = mysqli_query($con, $sql);
                                 <td><a class="nolink"><?php echo $dados['percursoKm'] ?></a></td>
                                 <td><img width="100" src="../<?php echo $dados['percursoImgUrl'] ?>"></td>
                                 <td><a href="editar_percursos.php?id=<?php echo $dados['percursoId'] ?>"> <i class="btn btn-primary fas fa-edit text-primary"></i></a><p></p>
-                                    <a href="#" onclick="confirmaElimina(<?php echo $dados['percursoId'] ?>)" > <i class="btn btn-danger fas fa-trash  text-danger" ></i></a></td>
+                                    <a href="#" onclick="confirmaEliminaP(<?php echo $dados['percursoId'] ?>)" > <i class="btn btn-danger fas fa-trash  text-danger" ></i></a></td>
                             </tr>
 
                                 <?php

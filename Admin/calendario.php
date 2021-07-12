@@ -44,8 +44,8 @@ $result = mysqli_query($con, $sql);
                                 <td><a class="nolink"><?php echo $dados['calendarioData'] ?></a></td>
                                 <td><a class="nolink"><?php echo $dados['calendarioVencedor'] ?></a></td>
                                 <td><a class="nolink"><?php echo $dados['calendarioNacionalidade'] ?></a></td>
-                                <td><a href="editar_calendario.php"> <i class="btn btn-primary fas fa-edit text-primary"></i></a><p></p>
-                                    <a href="eliminar_calendario.php" onclick=""> <i class="btn btn-danger fas fa-trash  text-danger" ></i> </a></td>
+                                <td><a href="editar_calendario.php?id=<?php echo $dados['calendarioId'] ?>"> <i class="btn btn-primary fas fa-edit text-primary"></i></a><p></p>
+                                    <a href="#" onclick="confirmaEliminaC(<?php echo $dados['calendarioId'] ?>)"> <i class="btn btn-danger fas fa-trash  text-danger" ></i> </a></td>
                             </tr>
 
                                 <?php
