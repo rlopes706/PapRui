@@ -42,6 +42,7 @@ $dados = mysqli_fetch_array($result);
                                 <td><a class="nolink"></a><input class="btn btn-success" type="submit" value="Editar" style="height: 45px; width: 150px; border-color: #3f3f3f""></td>
                             </tr
                         </form>
+
                         </tbody>
                     </table>
                 </div>
