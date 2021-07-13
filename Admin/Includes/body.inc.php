@@ -199,7 +199,7 @@ function botper()
     ?>
 
     <footer>
-        <div id="footer" class="fh5co-copyright text-center">
+        <div id="footer" class="fh5co-copyright text-center" style="position: absolute; padding-bottom: 0px">
             <p>
                 &copy; 2016 Free HTML5 template. All Rights Reserved.
                 <span>Designed with <i class="icon-heart"></i> by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a>

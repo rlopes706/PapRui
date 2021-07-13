@@ -139,6 +139,7 @@ function botport()
     $con = mysqli_connect(HOST, USER, PWD, DATABASE);
     $sql ="select * from marcas;";
     $result = mysqli_query($con, $sql);
+    $dados = mysqli_fetch_array($result);
     ?>
 
     <footer>
@@ -163,7 +164,7 @@ function botport()
 while ($dados = mysqli_fetch_array($result)) {
     ?>
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document" style="background-color: #2F3032; border-radius: 40px" >
+        <div class="modal-dialog" role="document" style="background-color: #00b3ee; border-radius: 10px" >
                 <div class="modal-header" >
                     <div class="text-color-white">
                         <h5 class="modal-title" id="exampleModalLabel" style="color: white; font-size: 20px"><strong><?php echo $dados['marcasNome'] ?></strong></h5>
@@ -195,11 +196,9 @@ while ($dados = mysqli_fetch_array($result)) {
                                     <td style="color: white"> <strong>Binário</strong></td>
                                     <td style="color: whitesmoke; text-align: left"><?php echo $dados['marcasBinario'] ?></td>
                                 </tr>
-                                <tr>
-                                    <td><img id="img1" src="<?php echo $dados['marcasImgUrl'] ?>" style="width: 300px; height: 300px; border: 4px solid #848484; margin-left: 130px"></td>
-                                </tr>
                             </table><p></p>
                         </div>
+                        <img id="img1" src="<?php echo $dados['marcasImgUrl'] ?>" style="width: 500px; border: 4px solid #848484; margin-left: 50px"><p></p>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                         </div>
@@ -290,32 +289,7 @@ function botper()
                         <div class="col-2">
                             <!-- INICIO - MENUS INFORMATIVO DE MARCAS -->
                             <!-- Site para ir buscar info de carros ->  https://www.razaoautomovel.com/2017/05/maquinas-rally-portugal-wrc-2017  -->
-                            <table >
-                                <tr>
-                                    <td style="color: white"> <strong>Cavalagem</strong></td>
-                                    <td> 380cv</td>
-                                </tr>
-                                <tr>
-                                    <td style="color: white"> <strong>Motor</strong></td>
-                                    <td> 4 cilindros em linha, Turbo</td>
-                                </tr>
-                                <tr>
-                                    <td style="color: white"> <strong>Diâmetro / Curso</strong></td>
-                                    <td> 83.0 mm / 73.9 mm</td>
-                                </tr>
-                                <tr>
-                                    <td style="color: white"> <strong>Binário</strong></td>
-                                    <td> 450 Nm às 5500 rpm</td>
-                                </tr>
-                                <tr>
-                                    <td style="color: white"> <strong>Transmissão</strong></td>
-                                    <td> 4 rodas</td>
-                                </tr>
-                                <tr>
-                                    <td style="color: white"> <strong>Cx. de Velocidades</strong></td>
-                                    <td> Sequencial | Seis velocidades | Accionamento por patilhas</td>
-                                </tr>
-                            </table><p></p>
+
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>

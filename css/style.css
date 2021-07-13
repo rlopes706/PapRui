@@ -33,7 +33,7 @@
 }
 
 .hoverWrapper #hoverShow3 {
-    display: none;
+    display: n;
     position: relative;
     background-image: url("../images/calend_1.png");
     left: -105px;

@@ -1,7 +1,6 @@
 <?php
 include_once("Includes/body.inc.php");
 top(PORTO);
-$con = mysqli_connect(HOST, USER, PWD, DATABASE);
 $sql ="select * from marcas;";
 $result = mysqli_query($con, $sql);
 ?>
@@ -74,12 +73,12 @@ $result = mysqli_query($con, $sql);
             ?>
 
         <div class="row row-bottom-padded-md">
-            <div class="col-md-12">
+            <div class="col-md-12" style="padding-left: 240px">
                 <ul id="fh5co-portfolio-list">
-                    <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(<?php echo $dados['marcasImgUrl'] ?>);">
+                    <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(<?php echo $dados['marcasImgUrl'] ?>); width: 700px;">
                         <a href="#" class="color-4" data-toggle="modal" data-target="#exampleModal">
                             <div class="case-studies-summary">
-                                <h2><?php echo $dados['marcasNome'] ?></h2>
+                                <h2><strong><?php echo $dados['marcasNome'] ?></strong></h2>
                             </div>
                         </a>
                     </li>
@@ -91,8 +90,10 @@ $result = mysqli_query($con, $sql);
         }
 
         ?>
+
     </div>
 </div>
+
 
 
 <?php

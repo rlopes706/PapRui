@@ -206,7 +206,7 @@ $result = mysqli_query($con, $sql);
                                     while ($dados = mysqli_fetch_array($result)) {
                                         ?>
                                      <tr class="active" data-number="1">
-                                        <td><a class="nolink">Rally de  <?php echo $dados['calendarioNome'] ?>"</a></td>
+                                        <td><a class="nolink">Rally de  <?php echo $dados['calendarioNome'] ?></a></td>
                                         <td class="aright"><a> <?php echo $dados['calendarioData'] ?></a></td>
                                         <td>Vencedor: <a> <?php echo $dados['calendarioVencedor'] ?></a></td>
                                         <td><i class="icon-globe2"></i><a> <?php echo $dados['calendarioNacionalidade'] ?></a></td>

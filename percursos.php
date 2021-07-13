@@ -1,7 +1,7 @@
 <?php
 include_once("Includes/body.inc.php");
 top(PORTO);
-$con = mysqli_connect(HOST, USER, PWD, DATABASE);
+
 $sql ="select * from calendario;";
 $result = mysqli_query($con, $sql);
 ?>
