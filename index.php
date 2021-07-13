@@ -73,7 +73,7 @@ top(HOME);
                             <h3><strong>Carros</strong></h3>
                             <p>Carros do Rally Javali é um menu informativo e intuitivo, onde o utilizador pode obversar
                                 informações sobre varios aspetos sobre carros predefenidos como também adicionar.</p>
-                            <p><a class="btn btn-primary" href="portfolio.php"><i class="icon-plus"></i> Saber Mais</a>
+                            <p><a class="btn btn-primary" href="carros.php"><i class="icon-plus"></i> Saber Mais</a>
                             </p>
                         </div>
                     </div>
@@ -118,7 +118,7 @@ top(HOME);
             <div class="row row-bottom-padded-md">
                 <div class="col-lg-4 col-md-4">
                     <div class="fh5co-blog animate-box">
-                        <a href="portfolio.php"><img class="img-responsive" src="images/blog-1.jpg" alt=""></a>
+                        <a href="carros.php"><img class="img-responsive" src="images/blog-1.jpg" alt=""></a>
                         <div class="blog-text">
                             <div class="prod-title">
                                 <h3 style="text-align: center"><strong>Carros</strong> do Rally Javali</h3>

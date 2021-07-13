@@ -69,7 +69,7 @@ function top($menu = HOME){
                                     <a href="index.php"><i class="icon-home3"></i> Início</a>
                                 </li>
                                 <li <?php if ($menu == PORTO) echo "class=\"active\""; ?>>
-                                    <a href="portfolio.php"><i class="fa fa-car"></i> Carros</a>
+                                    <a href="carros.php"><i class="fa fa-car"></i> Carros</a>
                                 </li>
                                 <li <?php if ($menu == PERCURSO) echo "class=\"active\""; ?>>
                                     <a href="percursos_2.php"><i class="icon-flow-branch"></i> Percursos</a>
@@ -162,7 +162,7 @@ function botport()
     <?php
 while ($dados = mysqli_fetch_array($result)) {
     ?>
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modal<?php echo $dados['marcasId']?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document" style="background-color: rgba(63, 63, 63, 0.95); border-radius: 10px" >
                 <div class="modal-header" >
                     <div class="text-color-white">
@@ -205,14 +205,14 @@ while ($dados = mysqli_fetch_array($result)) {
 
                     <!-- FIM - MENUS INFORMATIVO DE MARCAS -->
                 </div>
-                <?php
-            }
 
-            ?>
             </div>
         </div>
     </div>
+<?php
+            }
 
+?>
     <style>
         table, th, td {
             border: 2px solid #848484;

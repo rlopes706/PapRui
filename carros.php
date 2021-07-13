@@ -76,7 +76,7 @@ $result = mysqli_query($con, $sql);
             <div class="col-md-12" style="padding-left: 240px">
                 <ul id="fh5co-portfolio-list">
                     <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(<?php echo $dados['marcasImgUrl'] ?>); width: 700px;">
-                        <a href="#" class="color-4" data-toggle="modal" data-target="#exampleModal">
+                        <a href="#" class="color-4" data-toggle="modal" data-target="#modal<?php echo $dados['marcasId']?>">
                             <div class="case-studies-summary">
                                 <h2><strong><?php echo $dados['marcasNome'] ?></strong></h2>
                             </div>

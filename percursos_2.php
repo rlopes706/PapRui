@@ -162,7 +162,7 @@ $result = mysqli_query($con, $sql);
                 ?>
                 <div class="col-lg-4 col-md-4">
                     <div class="fh5co-blog animate-box">
-                        <a href="#"><img class="img-responsive" src="<?php echo $dados['percursosImgUrl'] ?> " alt=""></a>
+                        <a href="#"><img class="img-responsive" src="<?php echo $dados['percursoImgUrl'] ?> " alt=""></a>
                         <!-- editavel -->
                     </div>
                 </div>
