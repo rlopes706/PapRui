@@ -1,7 +1,6 @@
 <?php
 include_once ("includes/body.inc.php");
 
-
 $nome=($_POST['nomeMarcas']);
 $cavalagem=($_POST['cavalagemMarcas']);
 $motor=($_POST['motorMarcas']);
