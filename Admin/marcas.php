@@ -50,7 +50,7 @@ $result = mysqli_query($con, $sql);
                                         <td><a class="nolink"><?php echo $dados['marcasDiam'] ?> mm</a></td>
                                         <td><a class="nolink"><?php echo $dados['marcasBinario'] ?> rpm</a></td>
                                         <td><img id="img1" src="../<?php echo $dados['marcasImgUrl'] ?>"></td>
-                                        <td><a href="editar_marcas.php"><i class="btn btn-primary fas fa-edit text-primary"></i></a><p></p>
+                                        <td><a href="editar_marcas.php?id=<?php echo $dados['marcasId'] ?>"><i class="btn btn-primary fas fa-edit text-primary"></i></a><p></p>
                                             <a href="#" onclick="confirmaEliminaM(<?php echo $dados['marcasId'] ?>)"><i class="btn btn-danger fas fa-trash  text-danger" ></i></a></td>
                                     </tr
 

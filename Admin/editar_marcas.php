@@ -7,7 +7,6 @@ $result = mysqli_query($con, $sql);
 $dados = mysqli_fetch_array($result);
 ?>
 
-
 <div id="fh5co-content-section" class="fh5co-section-gray">
     <a class="sub-title-admin"><i class="fa fa-car"></i><strong> Carros - </strong>Editar</a>
     <div class="container">
@@ -33,7 +32,7 @@ $dados = mysqli_fetch_array($result);
                             <th><a class="btn btn-outline" style="cursor: default; width: 200px"><strong>Diâmetro / Curso </strong></a></th>
                             <th><a class="btn btn-outline" style="cursor: default; width: 170px"><strong>Binário </strong></a></th>
                             <th><a class="btn btn-outline" style="cursor: default; width: 170px"><strong>Imagem </strong></a></th>
-                            <th><a class="nolink" style="cursor: default; width: 170px"><strong><img src="../<?php echo $dados['percursoImgUrl'];?>" width="80"; height="80"> </strong></a></th>
+                            <th><a class="nolink" style="cursor: default; width: 170px"><strong><img  src="../<?php echo $dados['marcasImgUrl'];?>" width="80"; height="80"> </strong></a></th>
                         </tr>
                         <form action="confirm-edit-marcas.php" method="post" enctype="multipart/form-data">
                             <tr class="active" data-number="1">
