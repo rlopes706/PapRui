@@ -95,18 +95,6 @@ $result = mysqli_query($con, $sql);
                                 </div>
                             </div>
 
-                            <div class="loc" style="  left: 140px; top:300px;">
-                                <div class="hoverWrapper">
-                                    <a href="#">
-                                        <div class="galeria">
-                                            <img src="images/loc.png" width="28"
-                                                 onclick="smoothScroll(document.getElementById('fh5co-content-section'))">
-                                        </div>
-                                    </a>
-                                    <div id="hoverShow3" class="text-color-1"><strong>Rally do México</strong></div>
-                                </div>
-                            </div>
-
                             <div class="loc" style="left: 425px; top: 200px;">
                                 <div class="hoverWrapper">
                                     <a href="#">
@@ -145,7 +133,7 @@ $result = mysqli_query($con, $sql);
                     <div class="row">
                         <div class="col text-center">
                             <div class="desc animate-box">
-                                <button class="btn btn-primary" style="height: 60px; width: 400px; cursor: default" onclick="smoothScroll(document.getElementById('fh5co-content-section'))">
+                                <button class="btn btn-outline" style="height: 60px; width: 400px; cursor: default" onclick="smoothScroll(document.getElementById('fh5co-content-section'))">
                                     <strong>Resultados Finais</strong>
                                 </button>
                             </div>
@@ -177,13 +165,6 @@ $result = mysqli_query($con, $sql);
                                     <tr class="active" data-number="1">
                                         <td><a class="nolink"> Rally de Monte-Carlo</a></td>
                                         <td class="aright"><a>27.01.2019</a></td>
-                                        <td>Vencedor: <a> S. Ogier</a></td>
-                                        <td><i class="icon-globe2"></i><a> França</a></td>
-                                        <td><a style="color: rgba(0, 4, 202, 0.71);"><i class="icon-arrow-left22"></i> Resultados Finais</a></td>
-                                    </tr>
-                                    <tr class="active" data-number="1">
-                                        <td><a class="nolink"> Rally do México</a></td>
-                                        <td class="aright"><a>10.03.2019</a></td>
                                         <td>Vencedor: <a> S. Ogier</a></td>
                                         <td><i class="icon-globe2"></i><a> França</a></td>
                                         <td><a style="color: rgba(0, 4, 202, 0.71);"><i class="icon-arrow-left22"></i> Resultados Finais</a></td>

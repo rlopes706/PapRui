@@ -139,7 +139,6 @@ function botport()
     $con = mysqli_connect(HOST, USER, PWD, DATABASE);
     $sql ="select * from marcas;";
     $result = mysqli_query($con, $sql);
-    $dados = mysqli_fetch_array($result);
     ?>
 
     <footer>
@@ -164,7 +163,7 @@ function botport()
 while ($dados = mysqli_fetch_array($result)) {
     ?>
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document" style="background-color: #00b3ee; border-radius: 10px" >
+        <div class="modal-dialog" role="document" style="background-color: rgba(63, 63, 63, 0.95); border-radius: 10px" >
                 <div class="modal-header" >
                     <div class="text-color-white">
                         <h5 class="modal-title" id="exampleModalLabel" style="color: white; font-size: 20px"><strong><?php echo $dados['marcasNome'] ?></strong></h5>

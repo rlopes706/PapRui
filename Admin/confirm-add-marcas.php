@@ -14,7 +14,7 @@ if($img!=''){
 
 $sql="insert into marcas (marcasNome,marcasCavalagem,marcasMotor,marcasDiam,marcasBinario,marcasImgUrl)";
 $sql .= " values('".$nome."','".$cavalagem."','".$motor."','".$diam."','".$binario."','".$img."');";
-mysqli_query($con,$sql) or die(mysqli_error($con));
+mysqli_query($con,$sql); //or die(mysqli_error($con))
 header("location:marcas.php");
 
 ?>

@@ -1,6 +1,8 @@
 <?php
 include_once ("Includes/body.inc.php");
 top(PERCURSO);
+$sql ="select * from percursos;";
+$result = mysqli_query($con, $sql);
 ?>
 
 
@@ -147,46 +149,31 @@ top(PERCURSO);
         <!-- end:header-top -->
         <div id="fh5co-portfolio">
             <div class="container">
-
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3 text-center heading-section animate-box">
                         <h3><strong>Percursos</strong> do Rally Javali</h3>
                         <p>Percursos do Rally Javali é um menu onde pode obter bastante informação
                             sobre varios percursos predefenidos e também adicionar vários percursos de acordo com as
                             restrições apresentadas.</p>
+                    </div><p></p>
+
+            <?php
+            while ($dados = mysqli_fetch_array($result)) {
+                ?>
+                <div class="col-lg-4 col-md-4">
+                    <div class="fh5co-blog animate-box">
+                        <a href="#"><img class="img-responsive" src="<?php echo $dados['percursosImgUrl'] ?> " alt=""></a>
+                        <!-- editavel -->
                     </div>
                 </div>
+                <?php
 
+            }
 
-            <!--  FALTA POR A IMAGEM A EXPANDIR E DE LADO A DIZER OS KM'S DO PERCURSO-->
-                <div class="row row-bottom-padded-md">
-                    <div class="col-md-12">
-                        <section class="home_gallery_area p_120">
-                            <div class="container box_1620">
-                                <div class="gallery_f_inner row imageGallery1">
-                                    <div class="col-lg-3 col-md-4 col-sm-6 unv">
-                                        <div class="h_gallery_item">
-                                            <img src="images/percurso-1.png" alt="">
-                                            <div class="hover">
-                                                <a><h4>Spreading Peace to world</h4></a>
-                                                <a class="light"  href="#" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-expand"></i></a>
-                                            </div>
-                                        </div>
-
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-
-
-                </div>
-
-
+            ?>
+            </div>
         </div>
-        </div>
+    </div>
 
 
 
