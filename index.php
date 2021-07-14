@@ -149,25 +149,7 @@ top(HOME);
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="fh5co-blog animate-box">
-                        <a href="about.php"><img class="img-responsive" src="images/blog-3.png" alt=""></a>
 
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="fh5co-blog animate-box">
-                        <a href="about.php"><img class="img-responsive" src="images/blog-3.png" alt=""></a>
-
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-4">
-                    <div class="fh5co-blog animate-box">
-                        <a href="about.php"><img class="img-responsive" src="images/blog-3.png" alt=""></a>
-
-                    </div>
-                </div>
 
             </div>
         </div>

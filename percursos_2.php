@@ -95,7 +95,21 @@ $result = mysqli_query($con, $sql);
             }
         }
 
-
+        #img{
+            width:300px;
+            height:200px;
+            transition:0.6s ease;
+            border: solid white 1px;
+        }
+        img{
+            width:100%;
+            height:100%;
+        }
+        #img:hover{
+            width:500px;
+            height:500px;
+            position: relative;
+        }
     </style>
 
 
@@ -156,14 +170,20 @@ $result = mysqli_query($con, $sql);
                             sobre varios percursos predefenidos e também adicionar vários percursos de acordo com as
                             restrições apresentadas.</p>
                     </div><p></p>
-
             <?php
             while ($dados = mysqli_fetch_array($result)) {
                 ?>
                 <div class="col-lg-4 col-md-4">
-                    <div class="fh5co-blog animate-box">
-                        <a href="#"><img class="img-responsive" src="<?php echo $dados['percursoImgUrl'] ?> " alt=""></a>
-                        <!-- editavel -->
+                    <div class="fh5co-blog animate-box" style="width: 300px">
+                        <div id="img">
+                        <img src="<?php echo $dados['percursoImgUrl'] ?>" alt="">
+
+                        <div class="blog-text">
+                            <div class="prod-title" style="text-align: center; height: 80px;">
+                                <h3><strong><?php echo $dados['percursoNome'] ?></strong> <br><br> <?php echo $dados['percursoKm'] ?> km</h3>
+                            </div>
+                        </div>
+                        </div>
                     </div>
                 </div>
                 <?php
