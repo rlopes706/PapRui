@@ -169,11 +169,15 @@ $result = mysqli_query($con, $sql);
                         <p>Percursos do Rally Javali é um menu onde pode obter bastante informação
                             sobre varios percursos predefenidos e também adicionar vários percursos de acordo com as
                             restrições apresentadas.</p>
-                    </div><p></p>
+                    </div>
+                </div>
+                <div class="row">
             <?php
+            $contador=4;
             while ($dados = mysqli_fetch_array($result)) {
+                $contador--;
                 ?>
-                <div class="col-lg-4 col-md-4">
+                <div class="col-lg-4 col-md-4 " style="z-index: <?php echo $contador*100?>">
                     <div class="fh5co-blog animate-box" style="width: 300px">
                         <div id="img">
                         <img src="<?php echo $dados['percursoImgUrl'] ?>" alt="">
@@ -187,6 +191,10 @@ $result = mysqli_query($con, $sql);
                     </div>
                 </div>
                 <?php
+                if($contador==1){
+                    $contador=4;
+                    echo '</div><div class="row">';
+                }
 
             }
 
