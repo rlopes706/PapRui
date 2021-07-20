@@ -146,42 +146,47 @@ $result = mysqli_query($con, $sql);
                     <div class="container">
                         <div class="row">
                             <div class="desc animate-box">
-                                <table id="t01" style="margin-left: 80px">
-                                    <!--<tr class="active">
-                                        <th><a class="active"><strong>Nome Rally</strong></a></th>
-                                        <th><a class="active"><strong>Dia de Começo</strong></a></th>
-                                        <th><a class="active"><strong>Vencedor</strong></a></th>
-                                        <th><a class="active"><strong>Nacionalidade</strong></a></th>
-                                        <th><a class="active"><strong>ESPAÇO</strong></a></th>
-                                    </tr> -->
+                                <table id="t01" style="margin-left: -100px">
                                     <tbody>
                                     <tr class="active" data-number="1">
                                         <td><a class="nolink"> Rally de Portugal</a></td>
                                         <td class="aright"><a>02.06.2019</a></td>
                                         <td>Vencedor: <a> O. Tänak</a></td>
                                         <td><i class="icon-globe2"></i><a> Estonia</a></td>
-                                        <td><a style="color: rgba(0, 4, 202, 0.71);"><i class="icon-arrow-left22"></i> Resultados Finais</a></td>
+                                        <td><a style="color: rgba(0, 4, 202, 0.71);"> Resultados Finais <i class="icon-arrow-right22"></i></a></td>
+                                        <td></td>
+                                        <td>Segundo: <a> O. Tänak</a></td>
+                                        <td>Terceiro: <a> O. Tänak</a></td>
                                     </tr>
                                     <tr class="active" data-number="1">
                                         <td><a class="nolink"> Rally de Monte-Carlo</a></td>
                                         <td class="aright"><a>27.01.2019</a></td>
                                         <td>Vencedor: <a> S. Ogier</a></td>
                                         <td><i class="icon-globe2"></i><a> França</a></td>
-                                        <td><a style="color: rgba(0, 4, 202, 0.71);"><i class="icon-arrow-left22"></i> Resultados Finais</a></td>
+                                        <td><a style="color: rgba(0, 4, 202, 0.71);"> Resultados Finais <i class="icon-arrow-right22"></i></a></td>
+                                        <td><a class="nolink"></a></td>
+                                        <td>Segundo: <a> O. Tänak</a></td>
+                                        <td>Terceiro: <a> O. Tänak</a></td>
                                     </tr>
                                     <tr class="active" data-number="1">
                                         <td><a class="nolink"> Rally da Croácia</a></td>
                                         <td class="aright"><a>25.04.2021</a></td>
                                         <td>Vencedor: <a> S. Ogier</a></td>
                                         <td><i class="icon-globe2"></i><a> França</a></td>
-                                        <td><a style="color: rgba(0, 4, 202, 0.71);"><i class="icon-arrow-left22"></i> Resultados Finais</a></td>
+                                        <td><a style="color: rgba(0, 4, 202, 0.71);"> Resultados Finais <i class="icon-arrow-right22"></i></a></td>
+                                        <td><a class="nolink"></a></td>
+                                        <td>Segundo: <a> O. Tänak</a></td>
+                                        <td>Terceiro: <a> O. Tänak</a></td>
                                     </tr>
                                     <tr class="active" data-number="1">
                                         <td><a class="nolink"> Rally da Filândia</a></td>
                                         <td class="aright"><a>28.02.2021</a></td>
                                         <td>Vencedor: <a> O. Tãnak</a></td>
                                         <td><i class="icon-globe2"></i><a> Estonia</a></td>
-                                        <td><a style="color: rgba(0, 4, 202, 0.71);"><i class="icon-arrow-left22"></i> Resultados Finais</a></td>
+                                        <td><a style="color: rgba(0, 4, 202, 0.71);"> Resultados Finais <i class="icon-arrow-right22"></i></a></td>
+                                        <td><a class="nolink"></a></td>
+                                        <td>Segundo: <a> O. Tänak</a></td>
+                                        <td>Terceiro: <a> O. Tänak</a></td>
                                     </tr>
                                     <?php
                                     while ($dados = mysqli_fetch_array($result)) {
@@ -191,17 +196,23 @@ $result = mysqli_query($con, $sql);
                                         <td class="aright"><a> <?php echo $dados['calendarioData'] ?></a></td>
                                         <td>Vencedor: <a> <?php echo $dados['calendarioVencedor'] ?></a></td>
                                         <td><i class="icon-globe2"></i><a> <?php echo $dados['calendarioNacionalidade'] ?></a></td>
-                                        <td><a style="color: rgba(0, 4, 202, 0.71);"><i class="icon-arrow-left22"></i> Resultados Finais</a></td>
+                                        <td><a style="color: rgba(0, 4, 202, 0.71);"> Resultados Finais <i class="icon-arrow-right22"></i></a></td>
+                                        <td><a class="nolink"></a> </td>
+                                        <td>Segundo: <a><?php echo $dados['calendarioSegundo'] ?></a></td>
+                                        <td>Terceiro: <a><?php echo $dados['calendarioTerceiro'] ?></a></td>
                                     </tr>
+
+
 
                                         <?php
 
-                                                    }
+                                    }
 
-                                                ?>
-
+                                    ?>
                                     </tbody>
                                 </table>
+
+
                             </div>
                         </div>
                     </div>
