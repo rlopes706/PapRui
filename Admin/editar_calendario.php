@@ -23,22 +23,27 @@ $dados = mysqli_fetch_array($result);
         <div class="container">
             <div class="row">
                 <div class="desc animate-box">
-                    <table id="t01" style="margin-left: -100px">
+                    <table id="t01" style="margin-left: -300px">
                         <tbody>
                         <tr>
-                            <th><a class="btn btn-outline" style="cursor: default; width: 230px"><strong>Localidade </strong></a></th>
-                            <th><a class="btn btn-outline" style="cursor: default; width: 230px"><strong>Data do Começo </strong></a></th>
-                            <th><a class="btn btn-outline" style="cursor: default; width: 230px""><strong>Vencedor </strong></a></th>
-                            <th><a class="btn btn-outline" style="cursor: default; width: 230px"><strong>Nacionalidade </strong></a></th>
+                            <th><a class="btn btn-outline" style="cursor: default; width: 200px"><strong>Localidade </strong></a></th>
+                            <th><a class="btn btn-outline" style="cursor: default; width: 200px"><strong>Data do Começo </strong></a></th>
+                            <th><a class="btn btn-outline" style="cursor: default; width: 200px""><strong>Vencedor </strong></a></th>
+                            <th><a class="btn btn-outline" style="cursor: default; width: 200px"><strong>Nacionalidade </strong></a></th>
+                            <th><a class="btn btn-outline" style="cursor: default; width: 200px"><strong>Segundo </strong></a></th>
+                            <th><a class="btn btn-outline" style="cursor: default; width: 200px"><strong>Terceiro </strong></a></th>
+
                             <th><a class="nolink"><strong> <!-- Espaço --> </strong></a></th>
                         </tr>
                         <form action="confirm-edit-calendario.php" method="post" enctype="multipart/form-data">
                             <tr class="active" data-number="1">
                                 <td><input name="idCalendario" hidden value="<?php echo $dados['calendarioId']?>"/>
-                                    <a class="nolink"></a><input class="btn btn-outline" type="text" name="nomeCalendario" value="<?php echo $dados['calendarioNome']?>" style="cursor: text"></td>
-                                <td><a class="nolink"></a><input class="btn btn-outline" type="date" name="dataCalendario" value="<?php echo $dados['calendarioData']?>" style="cursor: pointer"></td>
-                                <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="vencedorCalendario" value="<?php echo $dados['calendarioVencedor']?>" style="cursor: text"></td>
-                                <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="nacionalidadeCalendario" value="<?php echo $dados['calendarioNacionalidade']?>" style="cursor: text"></td>
+                                    <a class="nolink"></a><input class="btn btn-outline" type="text" name="nomeCalendario" value="<?php echo $dados['calendarioNome']?>" style="cursor: text; width: 200px"></td>
+                                <td><a class="nolink"></a><input class="btn btn-outline" type="date" name="dataCalendario" value="<?php echo $dados['calendarioData']?>" style="cursor: pointer; width: 200px"></td>
+                                <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="vencedorCalendario" value="<?php echo $dados['calendarioVencedor']?>" style="cursor: text; width: 200px"></td>
+                                <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="nacionalidadeCalendario" value="<?php echo $dados['calendarioNacionalidade']?>" style="cursor: text; width: 200px"></td>
+                                <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="segundoCalendario" value="<?php echo $dados['calendarioSegundo']?>" style="cursor: text; width: 200px"></td>
+                                <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="terceiroCalendario" value="<?php echo $dados['calendarioTerceiro']?>" style="cursor: text; width: 200px"></td>
                                 <td><a class="nolink"></a><input class="btn btn-success" type="submit" value="Editar" style="height: 45px; width: 150px; border-color: #3f3f3f""></td>
                             </tr
                         </form>
