@@ -29,6 +29,7 @@ $result = mysqli_query($con, $sql);
                             <th><a class="btn btn-outline" style="cursor: default; width: 230px"><strong>Nacionalidade </strong></a></th>
                             <th><a class="btn btn-outline" style="cursor: default; width: 200px""><strong>Segundo </strong></a></th>
                             <th><a class="btn btn-outline" style="cursor: default; width: 200px""><strong>Terceiro </strong></a></th>
+                            <th><a class="btn btn-outline" style="cursor: default; width: 200px""><strong>Quarto </strong></a></th>
                             <th><a class="nolink"><strong> <!-- Espaço --> </strong></a></th>
                         </tr>
                         <form action="confirm-add-calendario.php" method="post" enctype="multipart/form-data">
@@ -39,6 +40,7 @@ $result = mysqli_query($con, $sql);
                                 <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="nacionalidadeCalendario" style="cursor: text; width: 200px""></td>
                                 <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="segundoCalendario" style="cursor: text; width: 200px""></td>
                                 <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="terceiroCalendario" style="cursor: text; width: 200px""></td>
+                                <td><a class="nolink"></a><input class="btn btn-outline" type="text" name="quartoCalendario" style="cursor: text; width: 200px""></td>
                                 <td><a class="nolink"></a><input class="btn btn-success" type="submit" value="Adicionar" style="height: 45px; width: 150px; border-color: #3f3f3f""></td>
                           </tr
                         </form>

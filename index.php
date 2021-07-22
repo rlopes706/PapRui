@@ -10,7 +10,7 @@ top(HOME);
     <div class="fh5co-cover text-center" data-stellar-background-ratio="0.5"
          style="background-image: url(images/img-1.jpg);">
         <div class="desc animate-box">
-            <h2>Bem Vindo ao <strong>Rally Javali</strong></h2>
+            <h2>Bem-Vindo ao <strong>Rally Javali</strong></h2>
             <span>2020 / 2021</span>
             <h3></h3>
             <p><a class="btn btn-primary btn-lg btn-learn"
