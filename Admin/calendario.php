@@ -65,7 +65,13 @@ $result = mysqli_query($con, $sql);
             </div>
         </div>
     </div>
+ <!--
+ LOCAL | DATA | VENCEDOR | NACIONALIDADE | 1º | 2º
 
+WRC Rally Estonia - 15.07. 2021	 - FinlandK. ROVANPERÄ – Filandia -  C. BREEN -  T. NEUVILLE
+
+WRC Rally Italia Sardegna  -  03.06. - 06.06.2021  -  FranceS. OGIER  -   E. EVANS - T. NEUVILLE
+ -->
 
 
 <?php
